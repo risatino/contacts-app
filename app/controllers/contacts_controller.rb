@@ -6,4 +6,12 @@ class ContactsController < ApplicationController
   def onecontact
     @contact = Contact.last
   end
+
+  def get_form
+  
+  end
+
+  def send_form
+    @contacts = params[:contact]
+  end
 end
