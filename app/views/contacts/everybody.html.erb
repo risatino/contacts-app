@@ -1,8 +1,8 @@
-<h1>This is everyone we know on earth</h1>
+<h1>wo~ah...this is every human bean we know on earrrth</h1>
 
 <% @contacts.each do |contact| %>
-<h2><%= @contact.first_name %> <%= @contact.last_name %></h2>
-<h3>Phone: <%= @contact.phone %></h3>
-<h3>Email: <%= @contact.email %></h3>
+  <h2><%= contact.first_name %> <%= contact.last_name %></h2>
+  <h3>Phone: <%= contact.phone %></h3>
+  <h3>Email: <%= contact.email %></h3>
 <br>
 <% end %>
