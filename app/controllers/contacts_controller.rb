@@ -1,9 +1,9 @@
 class ContactsController < ApplicationController
-  def all_contacts
-    # @contacts = Contact.all
+  def everybody
+    @contacts = Contact.all
   end
 
-  def one_contact
-    
+  def onecontact
+    @contact = Contact.last
   end
 end
