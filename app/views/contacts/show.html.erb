@@ -1,0 +1,11 @@
+<h2>This is our human data entry</h2>
+<h3>Name: <%= @contact.full_name %></h3>
+<h3>Phone: +81 <%= @contact.phone %></h3>
+<h3>Email: <%= @contact.email %></h3>
+
+<%= link_to 'Home', '/contacts' %>
+<br>
+<%= link_to 'Edit', "/contacts/#{@contact.id}/edit" %>
+<br>
+<%= link_to 'Delete', "/contacts/#{@contact.id}", method: :delete %>
+

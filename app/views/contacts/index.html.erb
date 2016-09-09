@@ -1,0 +1,12 @@
+<h2>This is every human contact we have on planet earth.</h2>
+
+<% @contacts.each do |contact| %>
+  <h2><%= link_to contact.full_name, '/contacts/#{@contact.id}' %></h2>
+  <h3>Phone: +81 <%= contact.phone %></h3>
+  <h3>Email: <%= contact.email %></h3>
+  <h5>Updated on: <%= contact.friendly_time %></h5>
+<br>
+<%= link_to 'Edit', "/contacts/#{contact.id}/edit" %>
+<br>
+<%= link_to 'Delete', "/contacts/#{contact.id}", method: :delete %>
+<% end %>

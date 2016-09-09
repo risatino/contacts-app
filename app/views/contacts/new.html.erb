@@ -1,0 +1,56 @@
+<!-- <form action="/send_form" method="post">
+<div>
+  <label for="form_message">Enter Your Contact Information</label>
+  <input type="text" id="first_name" name="first">
+  <input type="text" id="last_name" name="last">
+  <input type="text" id="email" email="email">
+  <input type="text" id="phone" phone="phone">
+<div>
+  <input type="submit" value="Input Info">
+</div>
+</form> -->
+
+<%= form_tag '/contacts', method: :post do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name, @contact.first_name %>
+  </div>
+
+  <div>
+    <%= label_tag :middle_name %>
+    <%= text_field_tag :middle_name, @contact.middle_name %>
+  </div>
+  
+  <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name, @contact.last_name %>
+  </div>
+
+  <div>
+    <%= label_tag :phone %>
+    <%= text_field_tag :phone, @contact.phone %>
+  </div>
+
+  <div>
+    <%= label_tag :email %>
+    <%= text_field_tag :email, @contact.email %>
+  </div>
+<br>
+  <div>
+    <%= submit_tag 'Input Human Data' %>
+  </div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
