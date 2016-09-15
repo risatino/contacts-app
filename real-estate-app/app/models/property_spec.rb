@@ -1,0 +1,2 @@
+class PropertySpec < ApplicationRecord
+end

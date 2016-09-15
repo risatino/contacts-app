@@ -1,0 +1,12 @@
+"<h1>Display Form</h1>
+
+<%= form_tag '/display_message', method: :post do %>
+  <div>
+    <%= label_tag :answer %>
+    <%= text_field_tag :answer %>
+  </div>
+  </br>
+  <div>
+    <%= submit_tag 'Make a Guess' %>
+  </div>
+<% end %>"
