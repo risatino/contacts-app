@@ -1,0 +1,7 @@
+<h1>Food Establishments</h1>
+
+<% @restaurants.each do |restaurant| %>
+<h2><%= restaurant["aka_name"] %></h2>
+<h4><%= restaurant["city"] %></h4>
+<h4>Inspection Date <%= restaurant["inspection_date"] %></h4>
+<% end %>
