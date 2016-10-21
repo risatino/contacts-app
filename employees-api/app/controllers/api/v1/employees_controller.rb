@@ -7,8 +7,7 @@ class Api::V1::EmployeesController < ApplicationController
     @employee = Employee.create(
                                 first_name: params[:first_name],
                                 last_name: params[:last_name],
-                                email: params[:email],
-                                ssn: params[:ssn]
+                                email: params[:email]
                                 )
 
     redirect_to "/api/v1/employees/#{@employee.id}.json"
