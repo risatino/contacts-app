@@ -1,0 +1,6 @@
+<h1>Superheroes</h1>
+
+<h2><%= @superhero.name %></h2>
+<%= render partial: "superhero", locals: {superhero: @superhero} %>
+
+<%= link_to 'Delete', "/superheros/#{@superhero.id}", method: :delete %>

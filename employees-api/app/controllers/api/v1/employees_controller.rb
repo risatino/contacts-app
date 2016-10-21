@@ -11,10 +11,14 @@ class Api::V1::EmployeesController < ApplicationController
                                 ssn: params[:ssn]
                                 )
 
-    redirect_to "/employees/#{@employee.id}.json"
+    redirect_to "/api/v1/employees/#{@employee.id}.json"
   end
 
   def show
+    @employee = Employee.find(params[:id])
+  end
+
+  def update
     @employee = Employee.find(params[:id])
   end
 

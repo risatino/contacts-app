@@ -1,0 +1,11 @@
+<h1>My Employees Collection App</h1>
+
+<div ng-app="app">
+  {{ 1 + 1 }}
+</div>
+
+<div class="form">
+  <input type="text" ng-model="formFirstName" placeholder="Employee's First Name">
+  <input type="text" ng-model="formLastName" placeholder="Employee's Last Name">
+  <button ng-click="addEmployee(formFirstName, formLastName)">Submit</button>
+</div>

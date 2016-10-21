@@ -1,4 +1,4 @@
-class V2::SuperherosController < ApplicationController
+class Api::V2::SuperherosController < ApplicationController
   def index
     @superheros = Superhero.all
   end
@@ -25,7 +25,7 @@ class V2::SuperherosController < ApplicationController
     @superhero.power = params[:power] if params[:power]
     @superhero.save
     
-    render "show.json.jbuilder" 
+    redirect_to "/api/v1/superheros/#{@superhero["id"]}" 
   end
 
   def destroy

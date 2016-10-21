@@ -3,6 +3,8 @@
 # all numbers equally divisible by 5 to print "Buzz"
 # unless that number is equally divisible by 5 and 3, then print "Fizzbuzz"
 
+require 'rspec'
+
 class Fizzbuzz
   def output(number)
     return 'FizzBuzz' if number % 15 == 0

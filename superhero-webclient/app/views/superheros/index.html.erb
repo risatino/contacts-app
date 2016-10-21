@@ -1,0 +1,6 @@
+<h1>Super Gyro List</h1>
+
+<%= @superheros.each do |superhero| %>
+  <h2><a href="/superheros/<%= superhero.id %>"> <%= @superhero.name %> <%= @superhero.power %></a></h2>
+  <%= render partial: "superhero", locals: { superhero: superhero } %>
+<% end %>

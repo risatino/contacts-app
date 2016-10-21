@@ -1,0 +1,1 @@
+json.array! @superheros, partial: 'superhero', as: :superhero
