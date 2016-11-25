@@ -1,10 +1,9 @@
-<h1>My Employees Collection App</h1>
+<h1>The Employees App</h1>
 
 <div ng-app="app">
   {{ 1 + 1 }}
-</div>
 
-<div ng-controller="employeeCtrl" ng-init="setup()"> 
+<div ng-controller="employeesCtrl" ng-init="setup()"> 
  <div ng-repeat="employee in employees track by $index">
   <h2>{{ employee.first_name }} {{ employee.last_name }}</h2>
   <h3>{{ employee.email }}</h3>
@@ -20,4 +19,5 @@
   <input type="text" ng-model="formLastName" placeholder="Employee's Last Name">
   <input type="text" ng-model="formEmail" placeholder="Employee's Email">
   <button ng-click="addEmployee(formFirstName, formLastName, formEmail)">Submit</button>
+</div>
 </div>

@@ -4,8 +4,9 @@
 angular.module("app").controller("employeesCtrl", function($scope, $http) {
     $scope.setup = function() {
       $http.get("/api/v1/employees.json".then(function(response) {
+        console.log(response)
         $scope.employees = response.data;  
-      });
+      }());
     };
 
     $scope.addEmployee = function(newFirstName, newLastName, newEmail) {

@@ -1,12 +1,12 @@
-# 100.times do
-#   name = Faker::Superhero.name
-#   power = Faker::Superhero.power
+100.times do
+  name = Faker::Superhero.name
+  power = Faker::Superhero.power
 
-# Superhero.create(
-#   name: name,
-#   power: power
-#   )
-# end
+Superhero.create(
+  name: name,
+  power: power
+  )
+end
 
 200.times do
 Address.create(

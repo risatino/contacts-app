@@ -4,7 +4,6 @@ Rails.application.routes.draw do
       get '/superheros' => 'superheros#index'
       post '/superheros' => 'superheros#create'
       get '/superheros/:id' => 'superheros#show'
-      get '/superheros/:id/edit' => 'superheros#edit'
       patch '/superheros/:id' => 'superheros#update'
       delete '/superheros/:id' => 'superheros#destroy'
     end
@@ -13,7 +12,6 @@ Rails.application.routes.draw do
       get '/superheros' => 'superheros#index'
       post '/superheros' => 'superheros#create'
       get '/superheros/:id' => 'superheros#show'
-      get '/superheros/:id/edit' => 'superheros#edit'
       patch '/superheros/:id' => 'superheros#update'
       delete '/superheros/:id' => 'superheros#destroy'
     end
