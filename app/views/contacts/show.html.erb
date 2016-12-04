@@ -3,6 +3,13 @@
 <h3>Phone: +81 <%= @contact.phone %></h3>
 <h3>Email: <%= @contact.email %></h3>
 
+<h3>CONTACT GROUPS</h3>
+<ul>
+  <% @contact.groups.each do | group | %>
+    <li><%= group.name %></li>
+  <% end %>
+</ul>
+
 <%= link_to 'Home', '/contacts' %>
 <br>
 <%= link_to 'Edit', "/contacts/#{@contact.id}/edit" %>
